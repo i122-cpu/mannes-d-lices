@@ -1,41 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
 body {
-  font-family: 'Georgia', serif;
-  background-color: #faf6f1;
-  color: #4b3b2b;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff8f0;
+  color: #3e2723;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
-header, footer {
-  background-color: #a0522d;
-  color: white;
-  padding: 1rem;
+header {
   text-align: center;
+  padding: 20px 0;
+  background-color: #fff3e0;
 }
 
-nav a {
-  margin: 0 1rem;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #a75d28, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 2rem;
-}
-
-h1, h2 {
-  color: #a0522d;
-}
 nav {
-  text-align: center;
-  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px auto;
+  padding: 0 10px;
 }
+
 nav a.btn-nav {
   display: inline-block;
   padding: 12px 20px;
@@ -46,7 +42,6 @@ nav a.btn-nav {
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  margin: 8px;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -55,50 +50,26 @@ nav a.btn-nav:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-nav {
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
   text-align: center;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 0 10px;
 }
 
-nav a.btn-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fffaf0;
-  color: #8b0000;
+main h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #7b1e1e;
   text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-weight: 700;
-  font-size: 1.1rem;
-  width: 220px;
-  height: 70px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
 }
 
-nav a.btn-nav:hover {
-  transform: scale(1.05);
-  background-color: #fff1e6;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+footer a:hover {
+  text-decoration: underline;
 }
-
-nav a.btn-nav .btn-icon {
-  width: 35px;
-  height: 35px;
-  margin-right: 12px;
-  object-fit: contain;
-  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
-}
-
-/* Spécialités de cadres visuels */
-.cadre-legume    { border: 2px solid #4c7c53; }
-.cadre-fruit     { border: 2px solid #b22222; }
-.cadre-ustensile { border: 2px solid #6b3e26; }
-.cadre-patisserie{ border: 2px solid #c9a66b; }
-.cadre-legume2   { border: 2px solid #a43e11; }

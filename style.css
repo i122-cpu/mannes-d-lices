@@ -155,3 +155,44 @@ footer a:focus {
     max-width: 280px;
   }
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.image-container {
+  width: 220px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+
+.image-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(199,108,39,0.4);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container p {
+  font-weight: 700;
+  padding: 12px 0;
+  color: #8e4a0e;
+  font-family: 'Georgia', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  background-color: #f4e9de;
+  margin: 0;
+}

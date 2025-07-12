@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MANNES & DÉLICES</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MANNES & DÉLICES - L’art culinaire en ligne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <!-- Barre latérale -->
-    <aside class="sidebar">
+
+    <aside class="sidebar" role="navigation" aria-label="Menu principal">
       <h1>MANNES & DÉLICES</h1>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="recettes.html">Recettes</a>
-        <a href="cours.html">Cours</a>
-        <a href="contact.html">Contact</a>
-        <a href="apropos.html">À propos</a>
+        <ul>
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="recettes.html">Recettes</a></li>
+          <li><a href="cours.html">Cours en ligne</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+        </ul>
       </nav>
-      <div class="coordonnees">
+      <section class="contact-info" aria-label="Coordonnées de contact">
+        <p><strong>Contactez-nous :</strong></p>
         <p>📧 <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a></p>
         <p>📞 <a href="tel:+2290141239272">+229 01 41 23 92 72</a></p>
-        <p>💬 <a href="https://wa.me/2290152372275" target="_blank">WhatsApp : +229 01 52 37 22 75</a></p>
-      </div>
+        <p>💬 <a href="https://wa.me/2290152372275" target="_blank" rel="noopener noreferrer">WhatsApp : +229 01 52 37 22 75</a></p>
+      </section>
     </aside>
 
-    <!-- Contenu principal -->
-    <main class="content">
-      <section class="gallery">
-        <div class="card">
-          <img src="images/sauce.jpg" alt="Sauces africaines">
-          <div class="caption">Sauces africaines</div>
-        </div>
-        <div class="card">
-          <img src="images/salade.jpg" alt="Salades fraîches">
-          <div class="caption">Les salades</div>
-        </div>
-        <div class="card">
-          <img src="images/plats.jpg" alt="Plats de résistance">
-          <div class="caption">Saveurs des plats de résistance</div>
-        </div>
-        <div class="card">
-          <img src="images/dessert.jpg" alt="Desserts gourmands">
-          <div class="caption">Desserts gourmands</div>
-        </div>
+    <main class="main-content" role="main" tabindex="0">
+      <header class="hero">
+        <h2>Maîtrisez l’art culinaire avec <span>Mannes & Délices</span></h2>
+        <p>Recettes authentiques & cours détaillés pour révéler le chef qui est en vous.</p>
+      </header>
+
+      <section class="gallery" aria-label="Galerie des catégories culinaires">
+        <article class="card" tabindex="0" aria-describedby="desc-sauce">
+          <img src="images/sauces-africaines.jpg" alt="Sauces africaines dans un bol coloré" />
+          <h3 id="desc-sauce" class="caption">Sauces africaines</h3>
+        </article>
+
+        <article class="card" tabindex="0" aria-describedby="desc-salade">
+          <img src="images/salades-fraiches.jpg" alt="Salade fraîche colorée dans un bol" />
+          <h3 id="desc-salade" class="caption">Les salades</h3>
+        </article>
+
+        <article class="card" tabindex="0" aria-describedby="desc-plat">
+          <img src="images/plats-resistance.jpg" alt="Plat de résistance garni avec soin" />
+          <h3 id="desc-plat" class="caption">Saveurs des plats de résistance</h3>
+        </article>
+
+        <article class="card" tabindex="0" aria-describedby="desc-dessert">
+          <img src="images/desserts-gourmands.jpg" alt="Dessert gourmand et raffiné" />
+          <h3 id="desc-dessert" class="caption">Desserts gourmands</h3>
+        </article>
       </section>
+
+      <footer class="footer">
+        <p>&copy; 2025 Mannes & Délices | Tous droits réservés.</p>
+        <p>
+          Contact : 
+          <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a> |
+          Téléphone : <a href="tel:+2290141239272">+229 01 41 23 92 72</a> |
+          WhatsApp : <a href="https://wa.me/2290152372275" target="_blank" rel="noopener noreferrer">+229 01 52 37 22 75</a>
+        </p>
+      </footer>
     </main>
+
   </div>
 </body>
 </html>

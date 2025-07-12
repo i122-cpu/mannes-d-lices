@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Cours Payants | Mannes & Délices</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cours de cuisine | Mannes & Délices</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf5f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .cours {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .cours h3 {
+      color: #8B0000;
+    }
+
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Mannes & Délices</h1>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="recettes.html">Recettes</a>
-      <a href="cours.html">Cours</a>
-      <a href="contact.html">Contact</a>
+      <a href="/mannes-d-lices/index.html">Accueil</a>
+      <a href="/mannes-d-lices/recettes.html">Recettes</a>
+      <a href="/mannes-d-lices/cours.html">Cours</a>
+      <a href="/mannes-d-lices/contact.html">Contact</a>
+      <a href="/mannes-d-lices/apropos.html">À propos</a>
     </nav>
   </header>
+
   <main>
-    <h2>Cours Payants</h2>
-    <p>Rejoins nos cours premium pour maîtriser la cuisine professionnelle.</p>
+    <h2>Nos cours de cuisine</h2>
+
+    <div class="cours">
+      <h3>👨🏾‍🍳 Cours Gratuits</h3>
+      <p>Accède à nos bases culinaires : découpe, cuisson, assaisonnement, hygiène, dressage. Ces cours sont parfaits pour débuter et progresser à ton rythme.</p>
+    </div>
+
+    <div class="cours">
+      <h3>⭐ Cours Premium (à venir)</h3>
+      <p>Des sessions avancées avec des recettes techniques, des fiches PDF, et un accompagnement personnalisé. Reste connecté, les inscriptions ouvriront bientôt !</p>
+    </div>
   </main>
+
   <footer>
-    &copy; 2025 Mannes & Délices | mannesdelices@gmail.com
+    <p>&copy; 2025 Mannes & Délices | Contact : mannesdelices@gmail.com</p>
   </footer>
+
 </body>
 </html>

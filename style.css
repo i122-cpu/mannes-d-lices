@@ -36,23 +36,24 @@ nav {
   text-align: center;
   margin-top: 15px;
 }
-
 nav a.btn-nav {
-  background-color: #b22222; /* rouge plus clair */
-  color: white;
-  padding: 12px 22px;
-  margin: 0 10px;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #7b1e1e;
+  color: #fff8f0;
+  border: none;
   border-radius: 30px;
-  font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 3px 6px rgba(178,34,34,0.6);
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 nav a.btn-nav:hover {
-  background-color: #ff4c4c; /* rouge vif au survol */
+  background-color: #a93226;
   transform: scale(1.05);
-  box-shadow: 0 5px 12px rgba(255,76,76,0.7);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 nav {
   text-align: center;

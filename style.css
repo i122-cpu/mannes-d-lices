@@ -158,36 +158,36 @@ footer a:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  margin: 30px 0;
+  gap: 25px;
+  padding: 30px;
+  background-color: #fffaf2;
 }
 
 .image-container {
-  width: 200px;
-  background-color: #fff8f0;
-  border-radius: 10px;
+  width: 220px;
+  background-color: #ffffff;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   text-align: center;
 }
 
 .image-container:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 16px rgba(0,0,0,0.2);
 }
 
 .image-container img {
   width: 100%;
-  height: 130px;
+  height: 140px;
   object-fit: cover;
+  display: block;
 }
 
 .image-container p {
-  font-weight: bold;
-  font-family: 'Georgia', serif;
-  color: #8e4a0e;
   margin: 10px 0;
-  background-color: #f8ece2;
-  padding: 5px 0;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Georgia', serif;
+  color: #703c0f;
 }

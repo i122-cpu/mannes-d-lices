@@ -38,8 +38,7 @@ nav {
 }
 
 nav a.btn-nav {
-  display: inline-block;
-  background-color: #8B0000; /* Rouge foncé typique */
+  background-color: #b22222; /* rouge plus clair */
   color: white;
   padding: 12px 22px;
   margin: 0 10px;
@@ -47,11 +46,11 @@ nav a.btn-nav {
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 3px 6px rgba(139,0,0,0.4);
+  box-shadow: 0 3px 6px rgba(178,34,34,0.6);
 }
 
 nav a.btn-nav:hover {
-  background-color: #b22222; /* Rouge un peu plus clair */
+  background-color: #ff4c4c; /* rouge vif au survol */
   transform: scale(1.05);
-  box-shadow: 0 5px 12px rgba(178,34,34,0.6);
+  box-shadow: 0 5px 12px rgba(255,76,76,0.7);
 }

@@ -3,71 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MANNES & DÉLICES - L’art culinaire en ligne</title>
+  <title>MANNES & DÉLICES - Cours & Recettes</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
 
-    <aside class="sidebar" role="navigation" aria-label="Menu principal">
+  <header>
+    <div class="container-header">
       <h1>MANNES & DÉLICES</h1>
       <nav>
-        <ul>
-          <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <ul class="menu">
+          <li><a href="index.html" class="active">Accueil</a></li>
           <li><a href="recettes.html">Recettes</a></li>
-          <li><a href="cours.html">Cours en ligne</a></li>
+          <li><a href="cours.html">Cours</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="apropos.html">À propos</a></li>
         </ul>
       </nav>
-      <section class="contact-info" aria-label="Coordonnées de contact">
-        <p><strong>Contactez-nous :</strong></p>
-        <p>📧 <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a></p>
-        <p>📞 <a href="tel:+2290141239272">+229 01 41 23 92 72</a></p>
-        <p>💬 <a href="https://wa.me/2290152372275" target="_blank" rel="noopener noreferrer">WhatsApp : +229 01 52 37 22 75</a></p>
-      </section>
-    </aside>
+    </div>
+  </header>
 
-    <main class="main-content" role="main" tabindex="0">
-      <header class="hero">
-        <h2>Maîtrisez l’art culinaire avec <span>Mannes & Délices</span></h2>
-        <p>Recettes authentiques & cours détaillés pour révéler le chef qui est en vous.</p>
-      </header>
+  <main>
+    <section class="hero">
+      <h2>Bienvenue sur Mannes & Délices</h2>
+      <p>Découvrez des recettes authentiques et des cours en ligne pour devenir un expert en cuisine.</p>
+      <div class="actions">
+        <a href="recettes.html" class="btn">Voir les recettes</a>
+        <a href="cours.html" class="btn">Accéder aux cours</a>
+      </div>
+    </section>
 
-      <section class="gallery" aria-label="Galerie des catégories culinaires">
-        <article class="card" tabindex="0" aria-describedby="desc-sauce">
-          <img src="images/sauces-africaines.jpg" alt="Sauces africaines dans un bol coloré" />
-          <h3 id="desc-sauce" class="caption">Sauces africaines</h3>
-        </article>
+    <section class="gallery">
+      <div class="card">
+        <img src="images/sauces-africaines.jpg" alt="Sauces africaines" />
+        <h3>Sauces africaines</h3>
+      </div>
+      <div class="card">
+        <img src="images/salades-fraiches.jpg" alt="Salades fraîches" />
+        <h3>Les salades</h3>
+      </div>
+      <div class="card">
+        <img src="images/plats-resistance.jpg" alt="Plats de résistance" />
+        <h3>Saveurs des plats de résistance</h3>
+      </div>
+      <div class="card">
+        <img src="images/desserts-gourmands.jpg" alt="Desserts gourmands" />
+        <h3>Desserts gourmands</h3>
+      </div>
+    </section>
+  </main>
 
-        <article class="card" tabindex="0" aria-describedby="desc-salade">
-          <img src="images/salades-fraiches.jpg" alt="Salade fraîche colorée dans un bol" />
-          <h3 id="desc-salade" class="caption">Les salades</h3>
-        </article>
+  <footer>
+    <p>Contactez-nous :</p>
+    <p>📧 <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a> | 📞 <a href="tel:+2290141239272">+229 01 41 23 92 72</a> | WhatsApp : <a href="https://wa.me/2290152372275" target="_blank" rel="noopener noreferrer">+229 01 52 37 22 75</a></p>
+    <p>&copy; 2025 Mannes & Délices. Tous droits réservés.</p>
+  </footer>
 
-        <article class="card" tabindex="0" aria-describedby="desc-plat">
-          <img src="images/plats-resistance.jpg" alt="Plat de résistance garni avec soin" />
-          <h3 id="desc-plat" class="caption">Saveurs des plats de résistance</h3>
-        </article>
-
-        <article class="card" tabindex="0" aria-describedby="desc-dessert">
-          <img src="images/desserts-gourmands.jpg" alt="Dessert gourmand et raffiné" />
-          <h3 id="desc-dessert" class="caption">Desserts gourmands</h3>
-        </article>
-      </section>
-
-      <footer class="footer">
-        <p>&copy; 2025 Mannes & Délices | Tous droits réservés.</p>
-        <p>
-          Contact : 
-          <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a> |
-          Téléphone : <a href="tel:+2290141239272">+229 01 41 23 92 72</a> |
-          WhatsApp : <a href="https://wa.me/2290152372275" target="_blank" rel="noopener noreferrer">+229 01 52 37 22 75</a>
-        </p>
-      </footer>
-    </main>
-
-  </div>
 </body>
 </html>

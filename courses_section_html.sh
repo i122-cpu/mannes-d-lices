@@ -1,0 +1,25 @@
+#!/bin/bash
+
+cat <<EOF
+<section class="cards-section">
+  <h3>Nos cours</h3>
+  <div class="cards-container">
+    <div class="card">
+      <img src="images/cours-patisserie.jpg" alt="Cours de pâtisserie">
+      <p>Cours de pâtisserie</p>
+    </div>
+    <div class="card">
+      <img src="images/cours-cuisine-africaine.jpg" alt="Cours de cuisine africaine">
+      <p>Cours de cuisine africaine</p>
+    </div>
+    <div class="card">
+      <img src="images/cuisine-internationale.jpg" alt="Cuisine internationale">
+      <p>Cuisine internationale</p>
+    </div>
+    <div class="card">
+      <img src="images/techniques-culinaires.jpg" alt="Techniques culinaires">
+      <p>Techniques culinaires</p>
+    </div>
+  </div>
+</section>
+EOF

@@ -2,9 +2,20 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mannes & Délices - Cours et recettes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mannes & Délices - Le goût d’apprendre, l’art de cuisiner</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    // Recherche simple : filtre les cartes par texte
+    function searchRecipes() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
 </head>
 <body>
 
@@ -22,35 +33,73 @@
   </header>
 
   <section class="hero">
-    <h2>L'Art culinaire à portée de main</h2>
-    <p>Explore des recettes, apprends, maîtrise et savoure le monde de la cuisine professionnelle.</p>
+    <h2>Le goût d’apprendre, l’art de cuisiner.</h2>
+    <p>Explore des recettes et des cours pour maîtriser la cuisine professionnelle.</p>
+    <input
+      type="text"
+      id="searchInput"
+      onkeyup="searchRecipes()"
+      placeholder="Rechercher une recette ou un cours..."
+      aria-label="Recherche"
+    />
   </section>
 
-  <section class="gallery">
-    <div class="image-container">
-      <img src="https://images.unsplash.com/photo-1613145991554-b36b53be2e7e?auto=format&fit=crop&w=600&q=80" alt="Sauces africaines" />
-      <p>Sauces africaines</p>
-    </div>
-    <div class="image-container">
-      <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Les salades" />
-      <p>Les salades</p>
-    </div>
-    <div class="image-container">
-      <img src="https://images.unsplash.com/photo-1601056553234-8c5f77aa9734?auto=format&fit=crop&w=600&q=80" alt="Plats résistants" />
-      <p>Saveurs des plats résistants</p>
-    </div>
-    <div class="image-container">
-      <img src="https://images.unsplash.com/photo-1505253210343-d4fd6f1b1c00?auto=format&fit=crop&w=600&q=80" alt="Desserts gourmands" />
-      <p>Desserts gourmands</p>
-    </div>
-  </section>
+  <main>
 
-  <section class="apropos">
-    <h3>À propos de Mannes & Délices</h3>
-    <p>
-      Mannes & Délices est une plateforme dédiée à l'apprentissage de la cuisine professionnelle, mettant en avant l'excellence, la tradition culinaire, et l'innovation. Que tu sois débutant ou passionné, rejoins notre univers savoureux.
-    </p>
-  </section>
+    <section class="cards-section">
+      <h3>Recettes populaires</h3>
+      <div class="cards-container">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1613145991554-b36b53be2e7e?auto=format&fit=crop&w=400&q=80" alt="Sauces africaines" />
+          <p>Sauces africaines</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80" alt="Les salades" />
+          <p>Les salades</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1601056553234-8c5f77aa9734?auto=format&fit=crop&w=400&q=80" alt="Plats résistants" />
+          <p>Saveurs des plats résistants</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505253210343-d4fd6f1b1c00?auto=format&fit=crop&w=400&q=80" alt="Desserts gourmands" />
+          <p>Desserts gourmands</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <h3>Nos cours</h3>
+      <div class="cards-container">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1543352634-1e850b18e168?auto=format&fit=crop&w=400&q=80" alt="Cours de pâtisserie" />
+          <p>Cours de pâtisserie</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505253210399-5d91122a3ca3?auto=format&fit=crop&w=400&q=80" alt="Cours de cuisine africaine" />
+          <p>Cours de cuisine africaine</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Cours de cuisine internationale" />
+          <p>Cuisine internationale</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1543349684-41b38f93e55a?auto=format&fit=crop&w=400&q=80" alt="Techniques culinaires" />
+          <p>Techniques culinaires</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="apropos">
+      <h3>À propos de Mannes & Délices</h3>
+      <p>
+        Mannes & Délices est une plateforme dédiée à l'apprentissage de la cuisine professionnelle,
+        mettant en avant l'excellence, la tradition culinaire et l'innovation. Que tu sois débutant ou passionné,
+        rejoins notre univers savoureux.
+      </p>
+    </section>
+
+  </main>
 
   <section class="contact-info">
     <h4>Nous contacter</h4>

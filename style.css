@@ -7,10 +7,13 @@
 
 /* Corps */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fffaf3;
   color: #3a2e2e;
   line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* En-tête */
@@ -22,8 +25,9 @@ header {
 }
 
 header h1 {
-  font-size: 2em;
   font-family: 'Georgia', serif;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -31,96 +35,128 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 15px;
 }
 
 nav a {
   color: #fff;
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a:hover,
+nav a:focus {
+  color: #f4c152;
 }
 
-/* Bannière */
+/* Section hero */
 .hero {
-  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
   color: white;
-  text-align: center;
   padding: 80px 20px;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 .hero p {
   font-size: 1.2rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  margin-bottom: 25px;
 }
 
-/* Galerie */
-.gallery {
+.hero input[type="text"] {
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 450px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.hero input[type="text"]:focus {
+  box-shadow: 0 0 8px #f4c152;
+}
+
+/* Main content */
+main {
+  flex-grow: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sections titres */
+.cards-section h3,
+.apropos h3,
+.contact-info h4 {
+  color: #703c0f;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+/* Cartes */
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 20px;
-  gap: 20px;
+  gap: 25px;
 }
 
-.image-container {
-  width: 220px;
-  border-radius: 10px;
-  overflow: hidden;
+.card {
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 230px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
 }
 
-.image-container:hover {
-  transform: scale(1.05);
+.card:hover,
+.card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.image-container img {
+.card img {
   width: 100%;
   height: 140px;
   object-fit: cover;
 }
 
-.image-container p {
-  padding: 10px;
-  font-weight: bold;
+.card p {
+  padding: 15px;
+  font-weight: 600;
   color: #703c0f;
+  font-size: 1.1rem;
 }
 
 /* À propos */
-.apropos {
-  padding: 30px 20px;
-  background-color: #fef2e6;
+.apropos p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
   text-align: center;
-}
-
-.apropos h3 {
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  color: #5a2d0c;
+  color: #4a3621;
+  line-height: 1.5;
+  padding-bottom: 40px;
 }
 
 /* Contact */
 .contact-info {
-  padding: 30px 20px;
   background-color: #fffaf0;
+  padding: 30px 20px;
   text-align: center;
-}
-
-.contact-info h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
 }
 
 .contact-info ul {
@@ -128,8 +164,9 @@ nav a:hover {
 }
 
 .contact-info li {
-  margin: 8px 0;
   font-weight: 500;
+  margin: 10px 0;
+  font-size: 1.1rem;
 }
 
 /* Footer */
@@ -139,4 +176,16 @@ footer {
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -8,32 +8,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>MANNES & DÉLICES</h1>
-  </header>
+  <div class="container">
+    <!-- Barre latérale -->
+    <aside class="sidebar">
+      <h1>MANNES & DÉLICES</h1>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="recettes.html">Recettes</a>
+        <a href="cours.html">Cours</a>
+        <a href="contact.html">Contact</a>
+        <a href="apropos.html">À propos</a>
+      </nav>
+      <div class="coordonnees">
+        <p>📧 <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a></p>
+        <p>📞 <a href="tel:+2290141239272">+229 01 41 23 92 72</a></p>
+        <p>💬 <a href="https://wa.me/2290152372275" target="_blank">WhatsApp : +229 01 52 37 22 75</a></p>
+      </div>
+    </aside>
 
-  <nav>
-    <a href="/mannes-d-lices/index.html" class="btn-nav">Accueil</a>
-    <a href="/mannes-d-lices/recettes.html" class="btn-nav">Recettes</a>
-    <a href="/mannes-d-lices/cours.html" class="btn-nav">Cours</a>
-    <a href="/mannes-d-lices/contact.html" class="btn-nav">Contact</a>
-    <a href="/mannes-d-lices/apropos.html" class="btn-nav">À propos</a>
-  </nav>
-
-  <main>
-    <section>
-      <h2>Bienvenue chez Mannes & Délices</h2>
-      <p>Explorez des recettes gastronomiques, suivez des cours en ligne, et savourez l’art culinaire avec passion et élégance.</p>
-    </section>
-  </main>
-
-  <footer>
-  <p>© 2025 Mannes & Délices</p>
-  <p>
-    📧 Email : <a href="mailto:mannesdelices@gmail.com">mannesdelices@gmail.com</a><br>
-    📞 Appel : <a href="tel:+2290141239272">+229 01 41 23 92 72</a><br>
-    💬 WhatsApp : <a href="https://wa.me/2290152372275" target="_blank">+229 01 52 37 22 75</a>
-  </p>
-</footer>
+    <!-- Contenu principal -->
+    <main class="content">
+      <section class="gallery">
+        <div class="card">
+          <img src="images/sauce.jpg" alt="Sauces africaines">
+          <div class="caption">Sauces africaines</div>
+        </div>
+        <div class="card">
+          <img src="images/salade.jpg" alt="Salades fraîches">
+          <div class="caption">Les salades</div>
+        </div>
+        <div class="card">
+          <img src="images/plats.jpg" alt="Plats de résistance">
+          <div class="caption">Saveurs des plats de résistance</div>
+        </div>
+        <div class="card">
+          <img src="images/dessert.jpg" alt="Desserts gourmands">
+          <div class="caption">Desserts gourmands</div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

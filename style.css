@@ -32,3 +32,26 @@ main {
 h1, h2 {
   color: #a0522d;
 }
+nav {
+  text-align: center;
+  margin-top: 15px;
+}
+
+nav a.btn-nav {
+  display: inline-block;
+  background-color: #8B0000; /* Rouge foncé typique */
+  color: white;
+  padding: 12px 22px;
+  margin: 0 10px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 3px 6px rgba(139,0,0,0.4);
+}
+
+nav a.btn-nav:hover {
+  background-color: #b22222; /* Rouge un peu plus clair */
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(178,34,34,0.6);
+}

@@ -1,26 +1,100 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Recettes Gratuites | Mannes & Délices</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recettes | Mannes & Délices</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #8B0000;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .recette {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .recette h3 {
+      color: #8B0000;
+    }
+
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Mannes & Délices</h1>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="recettes.html">Recettes</a>
-      <a href="cours.html">Cours</a>
-      <a href="contact.html">Contact</a>
+      <a href="/mannes-d-lices/index.html">Accueil</a>
+      <a href="/mannes-d-lices/recettes.html">Recettes</a>
+      <a href="/mannes-d-lices/cours.html">Cours</a>
+      <a href="/mannes-d-lices/contact.html">Contact</a>
+      <a href="/mannes-d-lices/apropos.html">À propos</a>
     </nav>
   </header>
+
   <main>
-    <h2>Recettes Gratuites</h2>
-    <p>Découvre nos recettes traditionnelles, simples et savoureuses.</p>
+    <h2>Nos recettes du moment</h2>
+
+    <div class="recette">
+      <h3>🍗 Poulet Yassa</h3>
+      <p><strong>Ingrédients :</strong> Poulet, oignons, citron, moutarde, huile, sel, poivre.</p>
+      <p><strong>Préparation :</strong> Mariner le poulet avec les épices. Faire revenir les oignons, ajouter le poulet et laisser mijoter. Servir chaud avec du riz blanc.</p>
+    </div>
+
+    <div class="recette">
+      <h3>🥣 Bouillie de maïs au lait</h3>
+      <p><strong>Ingrédients :</strong> Farine de maïs, lait, sucre, muscade.</p>
+      <p><strong>Préparation :</strong> Mélanger la farine avec de l’eau, cuire à feu doux en remuant, ajouter le lait et le sucre à la fin.</p>
+    </div>
   </main>
+
   <footer>
-    &copy; 2025 Mannes & Délices | mannesdelices@gmail.com
+    <p>&copy; 2025 Mannes & Délices | Contact : mannesdelices@gmail.com</p>
   </footer>
+
 </body>
 </html>
